@@ -39,22 +39,26 @@ while True:
     if shape == 'SQUARE':
         square = Square()
         print ("Square Area is" , square.getArea(), 'Type "DONE" when finished.')
-        results.append(square.getArea())
+        area = (square.getArea(),'Square')
+        results.append(area)
         continue
     elif shape == 'TRIANGLE':
         triangle = Triangle()
         print ("Triangle Area is" , triangle.getArea(), 'Type "DONE" when finished.')
-        results.append(triangle.getArea())
+        area = (triangle.getArea(),'Triangle')
+        results.append(area)
         continue
     elif shape == 'RECTANGLE':
         rectangle = Rectangle()
         print ("Rectangle Area is", rectangle.getArea(), 'Type "DONE" when finished.')
-        results.append(rectangle.getArea())
+        area = (rectangle.getArea(),'Rectangle')
+        results.append(area)
         continue
     elif shape == 'TRAPEZOID':
         trapezoid = Trapezoid()
         print ("Trapezoid Area is", trapezoid.getArea(), 'Type "DONE" when finished.')
-        results.append(trapezoid.getArea())
+        area = (trapezoid.getArea(),'Trapezoid')
+        results.append(area)
         continue
     elif shape == 'DONE': break
 
