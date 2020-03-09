@@ -40,30 +40,30 @@ while True:
         square = Square()
         print ("Square Area is" , square.getArea(), 'Type "DONE" when finished.')
         area = (square.getArea(),'Square')
-        results.append(area)
-        continue
+
     elif shape == 'TRIANGLE':
         triangle = Triangle()
         print ("Triangle Area is" , triangle.getArea(), 'Type "DONE" when finished.')
         area = (triangle.getArea(),'Triangle')
-        results.append(area)
-        continue
+
     elif shape == 'RECTANGLE':
         rectangle = Rectangle()
         print ("Rectangle Area is", rectangle.getArea(), 'Type "DONE" when finished.')
         area = (rectangle.getArea(),'Rectangle')
-        results.append(area)
-        continue
+
     elif shape == 'TRAPEZOID':
         trapezoid = Trapezoid()
         print ("Trapezoid Area is", trapezoid.getArea(), 'Type "DONE" when finished.')
         area = (trapezoid.getArea(),'Trapezoid')
-        results.append(area)
-        continue
+
     elif shape == 'DONE': break
 
     else:
         print('Unrecognized shape, try again.')
         continue
+    results.append(area)
+try:
+    print('Process done! \nMaximum element is:', max(results),'\nMinimum element is:',min(results))
 
-print('Process done! \nMaximum element is:', max(results),'\nMinimum element is:',min(results))
+except:
+    print('Error: No result found')
