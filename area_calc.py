@@ -1,4 +1,4 @@
-class Calc():
+class Calc:
 
     def __init__(self):
         self.base = int(input('Enter base:'))
@@ -56,7 +56,8 @@ while True:
         print ("Trapezoid Area is", trapezoid.getArea(), 'Type "DONE" when finished.')
         area = (trapezoid.getArea(),'Trapezoid')
 
-    elif shape == 'DONE': break
+    elif shape == 'DONE':
+        break
 
     else:
         print('Unrecognized shape, try again.')
@@ -65,5 +66,5 @@ while True:
 try:
     print('Process done! \nMaximum element is:', max(results),'\nMinimum element is:',min(results))
 
-except:
-    print('Error: No result found')
+except Exception as ex:
+    print('Error: ' + str(ex))
